@@ -27,6 +27,9 @@ if header_row is not None:
 # Remove the first column (Rk) and the last column
 keeper_stats_2024_2025 = keeper_stats_2024_2025.iloc[:, 1:-1]
 
+# Add Season column after Player column
+keeper_stats_2024_2025.insert(1, 'Season', '2024-2025')
+
 keeper_stats_2024_2025.to_csv('keepers_stats_2024_2025.csv', index=False)
 
 # European Top 5 Leagues Advanced Goalkeeper Stats 2023-2024
@@ -55,6 +58,9 @@ if header_row is not None:
 # Remove the first column (Rk) and the last column
 keeper_stats_2023_2024 = keeper_stats_2023_2024.iloc[:, 1:-1]
 
+# Add Season column after Player column
+keeper_stats_2023_2024.insert(1, 'Season', '2023-2024')
+
 keeper_stats_2023_2024.to_csv('keepers_stats_2023_2024.csv', index=False)
 
 # European Top 5 Leagues Advanced Goalkeeper Stats 2022-2023
@@ -82,6 +88,9 @@ if header_row is not None:
     
 # Remove the first column (Rk) and the last column
 keeper_stats_2022_2023 = keeper_stats_2022_2023.iloc[:, 1:-1]
+
+# Add Season column after Player column
+keeper_stats_2022_2023.insert(1, 'Season', '2022-2023')
 
 keeper_stats_2022_2023.to_csv('keepers_stats_2022_2023.csv', index=False)
 
